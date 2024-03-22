@@ -1,0 +1,35 @@
+.MovieBox {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+    min-width: 190px;
+    width: 17%;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    display: flex;
+}
+
+.MovieBox img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.TextStars {
+    margin-left: 5px;
+}
+
+.MovieBox:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    height: max-content;
+}
+
+.dark a{
+    color: peachpuff;
+}
+.light a{
+    color: #281515;
+}

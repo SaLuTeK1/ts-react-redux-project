@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    font-family: "Andika", sans-serif;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    overflow-y: scroll;
+}
+.hide{
+    display: none !important;
+}
+.show{
+    display:inline-block !important;
+}
+.wrap{
+    width: 60%;
+    margin:0 auto;
+}
+
+.movies-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 42px;
+}
+
+.light{
+    background: #e3fdfd;
+    color: #281515;
+}
+.dark{
+    background: #33404b;
+    color: peachpuff;
+}
+
+.button-light{
+    background: #9dcff3;
+    color: #281515;
+    border: 1px solid #281515;
+
+}
+.button-light:disabled{
+    background: #67869b;
+    color: rgba(45, 33, 33, 0.67);
+}
+.button-dark{
+    background: rgb(3, 37, 65);
+    color: peachpuff;
+    border: 1px solid peachpuff;
+}
+.button-dark:disabled{
+    background: rgb(39, 43, 52);
+    color: #837461;
+}
+.my-button{
+    margin: 10px;
+    text-align: center;
+    width: 65px;
+    height: 45px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+.my-button:hover{
+    box-shadow: 0 4px 10px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+.my-button:disabled:hover{
+    box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    cursor: default;
+}
+.button-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+.light::-webkit-scrollbar-track {
+    background: #e1f3fb;
+}
+.light::-webkit-scrollbar-thumb {
+    background: #032541;
+}
+
+.dark::-webkit-scrollbar-track {
+    background: #33454b;
+}
+.dark::-webkit-scrollbar-thumb {
+    background: #f5d2b2;
+}
+
+.saved .for-saved{
+    width: 100%;
 }

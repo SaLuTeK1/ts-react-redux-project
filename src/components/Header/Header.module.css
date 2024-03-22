@@ -1,0 +1,33 @@
+.HeaderBox{
+    height: 80px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.headerWrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.goHome:hover {
+    cursor: pointer;
+}
+main{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.rightSide{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dark{
+    background: rgb(3, 37, 65);
+    color: peachpuff;
+}
+.light{
+    background: #9dcff3;
+    color: #281515;
+}

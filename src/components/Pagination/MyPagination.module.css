@@ -1,0 +1,13 @@
+.paginationBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    height: 70px;
+}
+.dark button{
+    color: peachpuff;
+}
+.light button{
+    color: #281515;
+}

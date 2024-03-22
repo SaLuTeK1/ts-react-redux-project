@@ -1,0 +1,6 @@
+export * from './ErrorPage'
+export * from './MoviesPage'
+export * from './MovieInfoPage'
+export * from './GenresPage'
+export * from './SearchPage'
+export * from './SavedMoviesPage'

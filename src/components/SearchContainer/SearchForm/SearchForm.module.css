@@ -1,0 +1,73 @@
+.searchInput{
+    height: 45px;
+    box-sizing: border-box;
+    width: 160px;
+    border-right:0;
+    border-radius: 5px 0 0 5px;
+}
+
+.searchInput:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgb(12, 0, 0);
+}
+.searchInput:focus + .searchButton{
+    box-shadow: 0 0 5px rgb(12, 0, 0);
+}
+
+.searchForm{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.searchButton{
+    border-radius: 0 5px 5px 0;
+    border-left: 0;
+    height: 45px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchButton:hover{
+    cursor: pointer;
+}
+
+.dark .searchInput{
+    border-top: 1px solid rgb(255, 218, 185);
+    border-left: 1px solid rgb(255, 218, 185);
+    border-bottom: 1px solid rgb(255, 218, 185);
+}
+.dark .searchButton{
+    border-top: 1px solid rgb(255, 218, 185);
+    border-bottom: 1px solid rgb(255, 218, 185);
+    border-right: 1px solid rgb(255, 218, 185);
+}
+
+.light .searchInput{
+    border-top: 1px solid rgb(40, 21, 21);
+    border-left: 1px solid rgb(40, 21, 21);
+    border-bottom: 1px solid rgb(40, 21, 21);
+}
+.light .searchButton{
+    border-top: 1px solid rgb(40, 21, 21);
+    border-bottom: 1px solid rgb(40, 21, 21);
+    border-right: 1px solid rgb(40, 21, 21);
+}
+
+.dark .searchInput , .dark .searchButton{
+    background: rgb(3, 37, 65);
+    color: peachpuff;
+}
+.light .searchInput, .light .searchButton{
+    background: #9dcff3;
+    color: #281515;
+}
+.dark .searchInput:focus, .dark .searchInput:focus + .searchButton{
+    box-shadow: 0 0 5px rgb(255, 218, 185);
+}
+.dark .searchForm:hover{
+    box-shadow: 0 0 5px rgb(255, 218, 185);
+}
+.light .searchForm:hover{
+    box-shadow: 0 0 5px rgb(12, 0, 0);
+}
