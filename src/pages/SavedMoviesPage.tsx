@@ -1,7 +1,7 @@
 import {useEffect} from "react";
 import {useAppDispatch, useAppSelector} from "../hooks";
 import {moviesActions} from "../store";
-import {SavedMoviesList} from "../components/MoviesContainer/SavedMoviesList/SavedMoviesList";
+import {SavedMoviesList} from "../components";
 import {useNavigate} from "react-router-dom";
 
 const SavedMoviesPage = () => {
