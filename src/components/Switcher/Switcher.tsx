@@ -1,8 +1,9 @@
 import {FC} from 'react';
 import Switch from '@mui/material/Switch';
+import {alpha} from "@mui/material";
+
 import {useAppDispatch, useAppSelector} from "../../hooks";
 import {switchActions} from "../../store";
-import {alpha} from "@mui/material";
 
 interface IProps {
 

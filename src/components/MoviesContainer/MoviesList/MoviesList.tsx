@@ -1,5 +1,3 @@
-
-
 import { useAppSelector} from "../../../hooks";
 import {MovieListCard} from "../MovieListCard";
 

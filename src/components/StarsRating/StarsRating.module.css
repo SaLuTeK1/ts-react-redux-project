@@ -1,0 +1,6 @@
+.StarBox{
+    display: flex;
+    align-items: center;
+    height: max-content;
+    margin-bottom: 5px;
+}

@@ -1,9 +1,10 @@
 import {SubmitHandler, useForm} from "react-hook-form";
 import {useNavigate, useParams} from "react-router-dom";
-import {useAppDispatch, useAppSelector} from "../../../hooks";
-import {moviesActions} from "../../../store";
 import SearchIcon from '@mui/icons-material/Search';
+
 import css from './SearchForm.module.css'
+import {moviesActions} from "../../../store";
+import {useAppDispatch, useAppSelector} from "../../../hooks";
 
 interface FormValues {
     searchText: string;

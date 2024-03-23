@@ -10,6 +10,11 @@
 .infoText{
     margin-left: 20px;
 }
+.flexBox{
+    display: flex;
+    align-items: center;
+}
+
 .runtimeBox{
     display: flex;
 }

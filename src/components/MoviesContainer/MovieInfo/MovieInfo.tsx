@@ -1,13 +1,13 @@
 import {Link} from "react-router-dom";
 import {useEffect} from "react";
 
-import {useAppDispatch, useAppSelector} from "../../../hooks";
-import {PosterPreview} from "../../PosterPreview";
-import {Trailers} from "../../TrailersContainer";
-import {StarsRating} from "../../StarsRating";
-import {BackButton, SaveDeleteButtons} from "../../ButtonsContainer";
 import css from './MovieInfo.module.css'
+import {BackButton, SaveDeleteButtons} from "../../ButtonsContainer";
+import {PosterPreview} from "../../PosterPreview";
+import {StarsRating} from "../../StarsRating";
+import {Trailers} from "../../TrailersContainer";
 import {moviesActions} from "../../../store";
+import {useAppDispatch, useAppSelector} from "../../../hooks";
 
 const MovieInfo = () => {
     const {movieDetails, videoKey, ids} = useAppSelector(state => state.movies);
@@ -15,7 +15,7 @@ const MovieInfo = () => {
     const {trigger} = useAppSelector(state => state.user);
 
     const {title, id, overview, poster_path, release_date, genres, runtime, tagline, vote_average} = movieDetails;
-    
+
     const key = videoKey.length - 1;
     const date = release_date.split('-')
     const dispatch = useAppDispatch();
@@ -32,7 +32,7 @@ const MovieInfo = () => {
             const stringId = modifiedString.split(',');
             dispatch(moviesActions.setIds(stringId))
         }
-    }, [favorites,dispatch]);
+    }, [favorites, dispatch]);
 
     useEffect(() => {
 
@@ -79,7 +79,9 @@ const MovieInfo = () => {
                     <div className={css.infoText}>
                         <h1>{title} ({date[0]})</h1>
                         <h5><i>{tagline}</i></h5>
-                        <h3>Rating:</h3> <StarsRating vote_average={vote_average}/>
+                        <div className={css.flexBox}>
+                            <h3>Rating:</h3> <StarsRating vote_average={vote_average}/>
+                        </div>
                         <div>
                             <h3>Genres:</h3>
                             <ul>
@@ -101,7 +103,7 @@ const MovieInfo = () => {
                         <div>
                             <h3>Overview:</h3><i><p>{overview}</p></i>
                         </div>
-                        <div id={`box${id}`}>
+                        <div className={css.flexBox} id={`box${id}`}>
                             <div id={`text${id}`} className={`show`}>
                                 <h4>Wanna save this?</h4>
                             </div>

@@ -1,4 +1,4 @@
-export * from './ErrorPage'
+export * from './ErrorPageContainer'
 export * from './MoviesPage'
 export * from './MovieInfoPage'
 export * from './GenresPage'

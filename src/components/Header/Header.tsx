@@ -1,11 +1,12 @@
-import css from './Header.module.css'
 import {useNavigate} from "react-router-dom";
-import {SearchForm} from "../SearchContainer";
-import {GenresMenu} from "../GenresContainer";
-import {useAppDispatch, useAppSelector} from "../../hooks";
+
+import css from './Header.module.css'
 import {moviesActions} from "../../store";
+import {SearchForm} from "../SearchContainer";
 import {Switcher} from "../Switcher";
+import {GenresMenu} from "../GenresContainer";
 import {SavedMovies, UserIcon} from "../UserInfo";
+import {useAppDispatch, useAppSelector} from "../../hooks";
 
 const Header = () => {
 
