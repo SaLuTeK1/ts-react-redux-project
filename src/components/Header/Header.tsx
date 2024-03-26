@@ -7,6 +7,7 @@ import {Switcher} from "../Switcher";
 import {GenresMenu} from "../GenresContainer";
 import {SavedMovies, UserIcon} from "../UserInfo";
 import {useAppDispatch, useAppSelector} from "../../hooks";
+import {LoginLogoutButtons} from "../ButtonsContainer";
 
 const Header = () => {
 
@@ -34,6 +35,7 @@ const Header = () => {
                         <UserIcon/>
                         <SavedMovies/>
                         <Switcher/>
+                        <LoginLogoutButtons/>
                     </aside>
                 </div>
             </div>

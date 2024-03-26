@@ -1,10 +1,12 @@
+import {useEffect} from "react";
 import {useNavigate} from "react-router-dom";
-import Favorite from "@mui/icons-material/Favorite";
 import {Badge} from "@mui/material";
+import Favorite from "@mui/icons-material/Favorite";
+
 import css from './SavedMovies.module.css'
 import {useAppDispatch, useAppSelector} from "../../../hooks";
-import {useEffect} from "react";
 import {userActions} from "../../../store";
+
 const SavedMovies = () => {
     const navigate = useNavigate();
     const {counter} = useAppSelector(state => state.user);

@@ -1,9 +1,9 @@
 import {FC, useEffect} from 'react';
 
+import css from './SavedMoviesList.module.css'
 import {MovieListCard} from '../MovieListCard';
 import {moviesActions} from "../../../store";
 import {useAppDispatch, useAppSelector} from "../../../hooks";
-import css from './SavedMoviesList.module.css'
 
 interface IProps {
     id: number

@@ -4,14 +4,17 @@ interface IState {
     counter: number
     username: string
     trigger:boolean
+    login:boolean
 }
 const favorites = localStorage.getItem('favoriteMovies');
 const favoriteMovies = JSON.parse(favorites);
+const usernameStorage = localStorage.getItem('username')
 
 const initialState: IState = {
     counter: favoriteMovies?.length || 0,
-    username: 'SaLuT1K',
-    trigger:null
+    username: usernameStorage ||null,
+    trigger:null,
+    login:null
 };
 
 
@@ -25,6 +28,9 @@ const userSlice = createSlice({
         },
         setTrigger:state=>{
             state.trigger = !state.trigger
+        },
+        setUsername:(state,action)=>{
+            state.username = action.payload
         }
     },
 });

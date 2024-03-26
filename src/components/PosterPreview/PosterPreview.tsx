@@ -1,7 +1,7 @@
 import {FC} from 'react';
 
-import {imageUrl} from "../../constants";
 import css from './PosterPreview.module.css'
+import {imageUrl} from "../../constants";
 
 
 interface IProps {

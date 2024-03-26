@@ -1,25 +1,28 @@
 import {FC} from 'react';
+import YouTube, {YouTubeProps} from 'react-youtube';
 
-import {youtube} from "../../constants";
 
 interface IProps {
-    videoKey:string
+    videoKey: string
 }
+
 
 const Trailers: FC<IProps> = ({videoKey}) => {
 
-    const src = `${youtube}${videoKey}`;
+    const onPlayerReady: YouTubeProps['onReady'] = (event) => {
+        event.target.pauseVideo();
+    }
+
+    const opts: YouTubeProps['opts'] = {
+        height: '450',
+        width: '70%',
+        playerVars: {
+            autoplay: 0,
+        },
+    };
 
     return (
-        <iframe
-            width="70%"
-            height="450"
-            src={src}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title="Embedded YouTube Video"
-        ></iframe>
+        <YouTube videoId={videoKey} opts={opts} onReady={onPlayerReady} />
     );
 };
 

@@ -1,7 +1,7 @@
 import {createBrowserRouter, Navigate} from "react-router-dom";
 
 import {MainLayout} from "./layouts";
-import {ErrorPage, GenresPage, MovieInfoPage, MoviesPage, SavedMoviesPage, SearchPage} from "./pages";
+import {ErrorPage, GenresPage, LoginPage, MovieInfoPage, MoviesPage, SavedMoviesPage, SearchPage} from "./pages";
 
 let router = createBrowserRouter([
     {
@@ -23,6 +23,9 @@ let router = createBrowserRouter([
             },
             {
                 path:'favorites',element:<SavedMoviesPage/>
+            },
+            {
+                path:'login',element:<LoginPage/>
             }
         ]
     }

@@ -7,7 +7,7 @@ const discover = '/discover'
 const genre = '/genre'
 const search = '/search'
 const videos = '/videos'
-const youtube = 'https://www.youtube.com/embed/'
+
 
 const urls = {
     movie: {
@@ -25,4 +25,4 @@ const urls = {
     }
 }
 
-export {baseURL, imageUrl, urls, youtube}
+export {baseURL, imageUrl, urls}

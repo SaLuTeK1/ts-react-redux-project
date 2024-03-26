@@ -1,4 +1,3 @@
-
 import {moviesActions, userActions} from "../../store";
 import {AppDispatch} from "../../types";
 
