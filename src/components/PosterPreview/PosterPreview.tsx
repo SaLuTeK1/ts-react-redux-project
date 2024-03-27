@@ -10,9 +10,10 @@ interface IProps {
 }
 
 const PosterPreview: FC<IProps> = ({poster_path,title}) => {
+
     return (
         <div className={css.Poster}>
-            <img src={imageUrl + poster_path} alt={title}/>
+            {poster_path?<img src={imageUrl + poster_path} alt={title}/>:<img src={require('../../images/noPoster.jpg')} alt={title}/>}
         </div>
     );
 };

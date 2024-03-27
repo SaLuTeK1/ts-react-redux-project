@@ -17,8 +17,7 @@ const urls = {
     },
     genre: {
         base: `${genre}${movie}/list`,
-        byGenre: (genreId: number): string => `${discover}${movie}?with_genres=${genreId}`,
-        byGenreIds: (genreIds: string): string => `${discover}${movie}?with_genres=${genreIds}`,
+        byGenre: (genreId: number): string => `${discover}${movie}?with_genres=${genreId}`
     },
     search: {
         byWord: (word: string): string => `${search}${movie}?query=${word}`

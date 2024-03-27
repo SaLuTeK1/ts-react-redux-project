@@ -8,8 +8,6 @@ export interface IMovie{
     vote_average:number
     runtime:number
     tagline:string
-    backdrop_path:string
-    vote_count:number
 }
 
 export interface IGenre {
