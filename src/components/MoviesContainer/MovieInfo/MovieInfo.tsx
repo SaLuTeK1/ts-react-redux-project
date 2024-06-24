@@ -21,7 +21,7 @@ const MovieInfo = () => {
     const date = release_date.split('-')
     const dispatch = useAppDispatch();
 
-
+    document.title = 'sss'
 
     const favorites = localStorage.getItem('favoriteMovies');
     useEffect(() => {
